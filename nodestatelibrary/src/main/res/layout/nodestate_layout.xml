@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:id="@+id/down"
+    android:background="#FFF">
+
+    <View
+        android:id="@+id/up"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#3E4148"></View>
+
+    <TextView
+        android:id="@+id/current_maintain_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/circle"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/firstNode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/grey_ball" />
+
+        <ImageView
+            android:id="@+id/secondNode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/grey_ball" />
+
+        <ImageView
+            android:id="@+id/thirdNode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/grey_ball" />
+
+        <ImageView
+            android:id="@+id/fourNode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/grey_ball" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circle"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/firstNodeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/tip_line_w"
+            android:drawableRight="@drawable/tip_line_b"
+            android:gravity="center"
+            android:text="已上报"
+            android:visibility="invisible"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/secondNodeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/tip_line_b"
+            android:drawableRight="@drawable/tip_line_b"
+            android:gravity="center"
+            android:text="已确定"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/thirdNodeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/tip_line_b"
+            android:drawableRight="@drawable/tip_line_b"
+            android:gravity="center"
+            android:text="维护中"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/fourNodeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/tip_line_b"
+            android:drawableRight="@drawable/tip_line_w"
+            android:gravity="center"
+            android:text="维护完成"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#dedede"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
