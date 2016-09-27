@@ -1,6 +1,6 @@
 # NodeStateView
-Marker task state or progress by using node
-A simple example that using Jitpack.io
+Marker task state or progress by using node<br>
+A simple example that using Jitpack.io<br><br>
 [![](https://jitpack.io/v/Forecheng/NodeStateView.svg)](https://jitpack.io/#Forecheng/NodeStateView)
 
 
@@ -9,7 +9,7 @@ A simple example that using Jitpack.io
 
 ## Preview
 
-![enter description here][1]
+![组件截图预览][1]
 
 ## Dependency
 
@@ -49,7 +49,11 @@ stateView1.setNodeProgressByStatus(1); //set status enum value
 stateView3.setNodeProgressByStatus(4); stateView3.setDownBackgroundColor(this,R.color.nice_color);
 stateView3.setUpBackgroundColor(this,R.color.colorAccent);
 ```
+***我们虽平凡，<br>
+但不平庸，<br>
+做一个能不停告诉自己前进的人，<br>
+一步一个脚印向前！***
 
 
 
-  [1]: ./images/image2.png "image2.png"
+  [1]: ./screenshot/image2.png
